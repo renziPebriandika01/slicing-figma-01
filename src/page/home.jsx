@@ -29,7 +29,7 @@ const Home = () => {
 
       <div className="mt-32">
         <p className="font-semibold sm:mt-20 mt-14 text-xl  sm:text-2xl text-center">
-          Why Chooes Ba<span className="text-green-690">chira</span>?
+          Why Choose Ba<span className="text-green-690">chira</span>?
         </p>
         <div className="icons flex sm:gap-44 gap-8 mt-10 justify-center sm:ml-0 ml-44 sm:mr-4 mr-0 w-16 sm:w-auto">
           <img src={Delivery} alt="" />

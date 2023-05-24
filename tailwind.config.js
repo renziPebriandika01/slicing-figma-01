@@ -1,16 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./index.html",
-"./src/**/*.{js,ts,jsx,tsx}",],
+  content: [ "./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       colors: {
-       green :{
-          690:'#3C9379',
-       }
+        green: {
+          690: "#3C9379",
+        },
       },
     },
   },
   plugins: [],
-}
-
+};

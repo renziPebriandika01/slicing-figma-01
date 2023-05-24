@@ -14,7 +14,7 @@ const Produk = React.forwardRef((props, ref) => {
     slidesToScroll: 1,
   };
   return (
-    <div className="mt-20 mb-20 ml-16" ref={ref} id="produk">
+    <div className="mt-20 mb-20 ml-16 " ref={ref} id="produk">
       <p className="font-semibold text-xl sm:ml-28 ml-2">
         Popular Products From
         <br />
@@ -24,7 +24,7 @@ const Produk = React.forwardRef((props, ref) => {
         <div className="">
         {/* mobile carousel */}
 
-        <Slider {...settings} className="mx-auto">
+        <Slider {...settings} className="">
           <div>
             <img src={NikeAir} alt="Nike Air" />
           </div>

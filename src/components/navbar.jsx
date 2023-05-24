@@ -8,7 +8,7 @@ import {
   faDollarSign,
   faSquareCheck,
   faShoppingBag,
-  faShoePrints,
+   faPoo,
 } from "@fortawesome/free-solid-svg-icons";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Logo from "../assets/Logo.svg";
@@ -53,7 +53,7 @@ function Navbar() {
   };
 
   const pricing = ()=>{
-    return alert ("halaman PRICING belum di bikin :(")
+    return alert ("halaman PRICING belum di bikin jirrr, yg mencet pasti belum glory wkwkw:(")
   }
   return (
     <>
@@ -151,7 +151,7 @@ function Navbar() {
             </div>
             <div className="flex items-center "  onClick={() => gotoBrand(refBrand.current)}>
               <FontAwesomeIcon
-                icon={faShoePrints}
+                icon={faPoo}
                 transform="flip-horizontal"
               />
               <a

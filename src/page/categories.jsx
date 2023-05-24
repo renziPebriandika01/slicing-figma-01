@@ -2,11 +2,12 @@ import Shoes from "../assets/shoes.png";
 import Skincar from "../assets/skincare.png";
 import electronic from "../assets/electronics.png";
 import fashion from "../assets/fashion.png";
+import React from "react";
 
-const Categories = () => {
+const Categories =React.forwardRef ((props,ref) => {
   return (
     <>
-    <div className="mb-20">
+    <div className="mb-20" ref={ref}>
        <p className="font-semibold text-base sm:text-3xl mt-10 sm:mt-14 sm:ml-20 ml-3">
           Browse Categories of <br />
           The Store
@@ -28,6 +29,6 @@ const Categories = () => {
     </>
 
   )
-}
+  });
 
 export default Categories

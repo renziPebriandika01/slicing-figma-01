@@ -2,23 +2,19 @@ import heroImage from "../assets/Hero Image.png";
 import Delivery from "../assets/IconDelivery.svg";
 import iconHeroForYou from "../assets/IconHereForYou.svg";
 import IconTrusted from "../assets/IconTusted.svg";
-import Brands from "./brands";
-import Categories from "./categories";
-import Produk from "./produk";
-import Footer from "../components/footer";
 const Home = () => {
-
-
   return (
     <>
-      <div className="mt-5 sm:mt-20 ml-0 flex absolute sm:ml-28">
-        <p className="text-2xl sm:text-6xl font-semibold ml-3 sm:ml-0">
+      <div className=" flex mt-20">
+        <p className="text-2xl  font-semibold ">
           Best Place to Buy <br />
           <span className="text-green-690">Everything.</span>
         </p>
-        <img src={heroImage} alt="" className="w-sm mr-10  sm:max-w-2xl sm:ml-56" />
+        <div className="container max-w-md mx-auto">
+          <img src={heroImage} alt="" className="" />
+        </div>
       </div>
-      <p className="ml-3 mt-32 sm:ml-28 sm:mt-80 text-xs sm:text-base">
+      <p className="ml-3 mt-10 sm:mt-80 text-xs sm:text-base">
         Best Place to Buy Everything. At Bachira, you can shop for all your
         favorite beauty brands, clothes,
         <br />
@@ -28,8 +24,6 @@ const Home = () => {
         Shopping Now
       </button>
       <div className="mt-32">
-      <Brands/>
-      <Categories/>
         <p className="font-semibold sm:mt-20 mt-14 text-xl  sm:text-2xl text-center">
           Why Chooes Ba<span className="text-green-690">chira</span>?
         </p>
@@ -44,12 +38,19 @@ const Home = () => {
           <p className="mr-9">Here For You</p>
         </div>
         <div className="flex mt-5 sm:text-lg text-xs justify-center sm:gap-x-20 gap-8 ml-10 sm:ml-12">
-        <p>Lorem ipsum dolor sit <br/>amet consectetur.</p>
-        <p>Lorem ipsum dolor sit <br/>amet consectetur.</p>
-        <p className="">Lorem ipsum dolor sit <br/>amet consectetur.</p>
+          <p>
+            Lorem ipsum dolor sit <br />
+            amet consectetur.
+          </p>
+          <p>
+            Lorem ipsum dolor sit <br />
+            amet consectetur.
+          </p>
+          <p className="">
+            Lorem ipsum dolor sit <br />
+            amet consectetur.
+          </p>
         </div>
-        <Produk/>
-        <Footer/>
       </div>
     </>
   );

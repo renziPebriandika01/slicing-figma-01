@@ -51,10 +51,14 @@ function Navbar() {
       behavior: "smooth",
     });
   };
+
+  const pricing = ()=>{
+    return alert ("halaman PRICING belum di bikin :(")
+  }
   return (
     <>
-      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 fixed">
-        <div className="max-w-6xl">
+      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 sm:static fixed ">
+        <div className="max-w-6xl px-0 sm:px-10">
           <div className="flex justify-between">
             <div className="flex items-center">
               <div className="flex space-x-4">
@@ -84,7 +88,7 @@ function Navbar() {
                   </a>
                 </div>
 
-                <a href="#" className="py-4 px-3 text-xl font-normal">
+                <a className="py-4 px-3 text-xl font-normal" onClick={()=>pricing()}>
                   Pricing
                 </a>
               </div>
@@ -132,7 +136,6 @@ function Navbar() {
             <div className="flex items-center" onClick={() => gotoProduk(refProduk.current)}>
               <FontAwesomeIcon icon={faShoppingBag} className="mr-2" />
               <a 
-                href="#"
                 className="py-2 px-4 text-sm hover:text-orange-500 text-white"
               >
                 Produk
@@ -141,7 +144,6 @@ function Navbar() {
             <div className="flex items-center"  onClick={() => gotoCategori(refCategori.current)}>
               <FontAwesomeIcon icon={faSquareCheck} className="mr-2" />
               <a
-                href="#"
                 className="py-2 px-4 text-sm hover:text-gray-300 text-white"
               >
                 Categories
@@ -153,7 +155,6 @@ function Navbar() {
                 transform="flip-horizontal"
               />
               <a
-                href="#"
                 className="py-2 px-4 text-sm hover:text-green-700 text-white"
               >
                 Brands
@@ -162,7 +163,7 @@ function Navbar() {
             <div className="flex items-center">
               <FontAwesomeIcon icon={faDollarSign} className="mr-2" />
               <a
-                href="/pricing"
+                onClick={()=>pricing()}
                 className="py-2 px-4 text-sm hover:text-blue-400 text-white"
               >
                 Pricing

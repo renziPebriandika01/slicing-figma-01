@@ -6,23 +6,27 @@ const Home = () => {
   return (
     <>
       <div className=" flex mt-20">
-        <p className="text-2xl  font-semibold ">
+        <div className="container flex flex-wrap">
+        <p className="text-1xl sm:text-7xl ml-3 font-semibold ">
           Best Place to Buy <br />
           <span className="text-green-690">Everything.</span>
         </p>
-        <div className="container max-w-md mx-auto">
+        <p className="ml-3 mt-10 sm:mt-10 text-xs sm:text-base">
+          Best Place to Buy Everything. At Bachira, you can shop for all your
+          favorite beauty brands, clothes,
+          <br />
+          household products and more at a single place.
+        </p>
+        <button className="mt-10 bg-green-690 rounded-lg py-1 px-2 ml-2 sm:ml-28 text-white transition duration-300 hover:bg-green-600">
+          Shopping Now
+        </button>
+        </div>
+        
+        <div className=" container mx-auto">
           <img src={heroImage} alt="" className="" />
         </div>
       </div>
-      <p className="ml-3 mt-10 sm:mt-80 text-xs sm:text-base">
-        Best Place to Buy Everything. At Bachira, you can shop for all your
-        favorite beauty brands, clothes,
-        <br />
-        household products and more at a single place.
-      </p>
-      <button className="mt-10 bg-green-690 rounded-lg py-3 px-3 ml-2 sm:ml-28 text-white transition duration-300 hover:bg-green-600">
-        Shopping Now
-      </button>
+
       <div className="mt-32">
         <p className="font-semibold sm:mt-20 mt-14 text-xl  sm:text-2xl text-center">
           Why Chooes Ba<span className="text-green-690">chira</span>?

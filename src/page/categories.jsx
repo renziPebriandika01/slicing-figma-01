@@ -7,12 +7,12 @@ import React from "react";
 const Categories =React.forwardRef ((props,ref) => {
   return (
     <>
-    <div className="mb-20" ref={ref}>
+    <div className=" container mb-20 ml-0 sm:ml-16 " ref={ref}>
        <p className="font-semibold text-base sm:text-3xl mt-10 sm:mt-14 sm:ml-20 ml-3">
           Browse Categories of <br />
           The Store
         </p>
-        <div className="flex sm:ml-10 ml-7 justify-center">
+        <div className="flex sm:ml-10 ml-7 ">
           <div className="categories mt-10 flex flex-col">
             <div className="flex-none">
               <img src={fashion} alt="" className="sm:w-max w-24 sm:h-52 h-14" />

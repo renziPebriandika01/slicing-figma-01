@@ -138,22 +138,22 @@ function Navbar() {
                 Produk
               </a>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center"  onClick={() => gotoCategori(refCategori.current)}>
               <FontAwesomeIcon icon={faSquareCheck} className="mr-2" />
               <a
-                href="/categories"
+                href="#"
                 className="py-2 px-4 text-sm hover:text-gray-300 text-white"
               >
                 Categories
               </a>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center "  onClick={() => gotoBrand(refBrand.current)}>
               <FontAwesomeIcon
                 icon={faShoePrints}
                 transform="flip-horizontal"
               />
               <a
-                href="/brands"
+                href="#"
                 className="py-2 px-4 text-sm hover:text-green-700 text-white"
               >
                 Brands

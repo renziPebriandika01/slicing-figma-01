@@ -21,7 +21,7 @@ const Produk = React.forwardRef((props, ref) => {
         All Brands
       </p>
       <div className="sm:hidden  block mt-10">
-        <div className="">
+        <div className=" container">
         {/* mobile carousel */}
 
         <Slider {...settings} className="">

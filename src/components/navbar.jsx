@@ -57,7 +57,7 @@ function Navbar() {
   }
   return (
     <>
-      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 sm:static fixed ">
+      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 sm:static fixed mr-5  ">
         <div className="max-w-6xl px-0 sm:px-10">
           <div className="flex justify-between">
             <div className="flex items-center">

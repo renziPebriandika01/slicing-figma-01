@@ -57,7 +57,7 @@ function Navbar() {
   }
   return (
     <>
-      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 sm:static fixed mr-5  ">
+      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 sm:static fixed sm:px-0 px-10 ">
         <div className="max-w-6xl px-0 sm:px-10">
           <div className="flex justify-between">
             <div className="flex items-center">
@@ -128,7 +128,7 @@ function Navbar() {
         <div
           className={`md:hidden ${
             isMobileMenuOpen
-              ? "block bg-green-690 w-2/3 py-3 px-4 h-full sm:rounded-none rounded-lg"
+              ? "block bg-green-690 w-full py-3 h-full sm:rounded-none rounded-lg px-10"
               : "hidden"
           }`}
         >
@@ -136,7 +136,7 @@ function Navbar() {
             <div className="flex items-center" onClick={() => gotoProduk(refProduk.current)}>
               <FontAwesomeIcon icon={faShoppingBag} className="mr-2" />
               <a 
-                className="py-2 px-4 text-sm hover:text-orange-500 text-white"
+                className="py-2 px-3 text-sm hover:text-slate-950 text-white"
               >
                 Produk
               </a>
@@ -144,7 +144,7 @@ function Navbar() {
             <div className="flex items-center"  onClick={() => gotoCategori(refCategori.current)}>
               <FontAwesomeIcon icon={faSquareCheck} className="mr-2" />
               <a
-                className="py-2 px-4 text-sm hover:text-gray-300 text-white"
+                className="py-2 px-2 text-sm hover:text-slate-950 text-white"
               >
                 Categories
               </a>
@@ -155,7 +155,7 @@ function Navbar() {
                 transform="flip-horizontal"
               />
               <a
-                className="py-2 px-4 text-sm hover:text-green-700 text-white"
+                className="py-2 px-4 text-sm hover:text-slate-950 text-white"
               >
                 Brands
               </a>
@@ -164,14 +164,14 @@ function Navbar() {
               <FontAwesomeIcon icon={faDollarSign} className="mr-2" />
               <a
                 onClick={()=>pricing()}
-                className="py-2 px-4 text-sm hover:text-blue-400 text-white"
+                className="py-2 px-4 text-sm hover:text-slate-950 text-white"
               >
                 Pricing
               </a>
             </div>
           </div>
 
-          <div className="mt-4 px-4 mb-3">
+          <div className="mt-4 px-1  mb-3 flex">
             <button>
               <a
                 href="/"

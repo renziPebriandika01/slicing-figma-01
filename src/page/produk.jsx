@@ -21,10 +21,10 @@ const Produk = React.forwardRef((props, ref) => {
         All Brands
       </p>
       <div className="sm:hidden  block mt-10">
-        <div className=" container">
+       
         {/* mobile carousel */}
 
-        <Slider {...settings} className="">
+        <Slider {...settings} className="container w-auto">
           <div>
             <img src={NikeAir} alt="Nike Air" />
           </div>
@@ -40,7 +40,7 @@ const Produk = React.forwardRef((props, ref) => {
         </Slider>
 
         {/* mobile carousel */}
-        </div>
+    
       </div>
       <div className="sm:block hidden">
         <div className=" container flex flex-wrap items-center sm:flex-nowrap  gap-10 mt-10">

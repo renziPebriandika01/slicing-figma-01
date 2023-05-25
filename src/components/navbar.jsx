@@ -53,7 +53,7 @@ function Navbar() {
   };
 
   const pricing = ()=>{
-    return alert ("halaman PRICING belum di bikin bjirrr:(")
+    return alert ("halaman PRICING belum di bikin bjirrr:(, main domino skuyyy di kos irgi")
   }
   return (
     <>

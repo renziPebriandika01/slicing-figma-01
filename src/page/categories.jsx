@@ -3,32 +3,41 @@ import Skincar from "../assets/skincare.png";
 import electronic from "../assets/electronics.png";
 import fashion from "../assets/fashion.png";
 import React from "react";
-
-const Categories =React.forwardRef ((props,ref) => {
+import Slider from "react-slick";
+const Categories = React.forwardRef((props, ref) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <>
-    <div className=" container mb-20 ml-0 sm:ml-16 " ref={ref}>
-       <p className="font-semibold text-base sm:text-3xl mt-10 sm:mt-14 sm:ml-20 ml-3">
+      <div className=" container mb-20 ml-0 sm:ml-16 " ref={ref}>
+        <p className="font-semibold text-base sm:text-3xl mt-10 sm:mt-14 sm:ml-20 ml-3">
           Browse Categories of <br />
           The Store
         </p>
-        <div className="flex sm:ml-10 ml-7 ">
-          <div className="categories mt-10 flex flex-col">
-            <div className="flex-none">
-              <img src={fashion} alt="" className="sm:w-max w-24 sm:h-52 h-14" />
+        <div className="mt-10 ">
+          <Slider {...settings} className="container w-auto">
+            <div className="">
+              <div className="space-y-6 pl-4 mr-12 sm:pl-96">
+                <img src={fashion} alt="Nike Air" />
+                <img src={Skincar} alt="Sweater" />
+              </div>
             </div>
-            <div className="flex-none">
-              <img src={Skincar} alt="" className="sm:w-max w-24 sm:h-52 h-12 sm:mt-9 mt-5" />
+            <div className="pl-9 sm:pl-96">
+              <img src={Shoes} alt="Watch" />
             </div>
-          </div>
-          <img src={Shoes} alt="" className="sm:w-80 w-20 ml-4 mt-9 mr-2 h-32 sm:h-auto" />
-          <img src={electronic} alt="" className="sm:w-80 w-20 ml-4 mt-9 h-32 mr-2 sm:h-auto" />
+            <div className=" pl-4  sm:pl-96">
+              <img src={electronic} alt="Airpods" />
+            </div>
+          </Slider>
         </div>
-    </div>
-
+      </div>
     </>
+  );
+});
 
-  )
-  });
-
-export default Categories
+export default Categories;

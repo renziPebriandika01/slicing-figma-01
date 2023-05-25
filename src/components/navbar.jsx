@@ -53,17 +53,17 @@ function Navbar() {
   };
 
   const pricing = ()=>{
-    return alert ("halaman PRICING belum di bikin jirrr, yg mencet pasti belum glory wkwkw:(")
+    return alert ("halaman PRICING belum di bikin bjirrr:(")
   }
   return (
     <>
-      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 sm:static fixed sm:px-0 px-10 ">
-        <div className="max-w-6xl px-0 sm:px-10">
+      <nav className="sm:border-b-2 border-collapse top-0 w-full mb-20 sm:static fixed sm:px-0 px-10 z-30 xl:flex xl:justify-center xl:mx-0">
+        <div className="max-w-6xl px-0 sm:px-10 ">
           <div className="flex justify-between">
             <div className="flex items-center">
               <div className="flex space-x-4">
                 <a href="/" className="flex">
-                  <img src={Logo} alt="" className="h-13 w-13 mr-3" />
+                  <img src={Logo} alt="" className="h-13 sm:w-13 mr-3 md:w-25 w-13 lg:w-20 " />
                 </a>
               </div>
 

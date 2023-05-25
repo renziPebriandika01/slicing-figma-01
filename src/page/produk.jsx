@@ -43,7 +43,7 @@ const Produk = React.forwardRef((props, ref) => {
     
       </div>
       <div className="sm:block hidden">
-        <div className=" container flex flex-wrap items-center sm:flex-nowrap  gap-10 mt-10">
+        <div className=" container flex tems-center  gap-10 mt-10">
           <div className="border-e-2 border-b-2 shadow-lg px-5 py-3 ">
             <img src={NikeAir} alt="" className="" />
             <p className="">

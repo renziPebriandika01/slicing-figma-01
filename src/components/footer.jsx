@@ -8,7 +8,7 @@ const footer = () => {
               Ba<span className="text-green-690">chira</span>
             </p>
             <p className="mt-4 sm:mt-2  ">
-              Bachira Bachira is an online store dealing with all product <br />
+              Bachira is an online store dealing with all product <br />
               Bachira provide cheap, high quality, products to <br /> customers
             </p>
           </div>
